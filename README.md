@@ -1,2 +1,3 @@
-# rails-peppers-cookbook
-XPeppers Rails applications cookbook
+# Rails Peppers Cookbook
+
+XPeppers base Rails applications cookbook

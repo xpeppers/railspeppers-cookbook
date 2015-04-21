@@ -1,0 +1,28 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[railspeppers]
+    attributes: {
+      railspeppers: {
+        db: {
+          name: testdb,
+          user: testuser,
+          password: testpassword
+        }
+      },
+      newrelic: {
+        server_monitoring: {
+          license: 0000ffff0000ffff0000ffff0000ffff0000ffff
+        }
+      }
+    }

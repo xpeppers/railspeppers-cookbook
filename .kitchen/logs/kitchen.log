@@ -1,0 +1,816 @@
+I, [2015-04-20T12:58:01.273698 #3600]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T12:58:02.091016 #3600]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T12:58:02.091182 #3600]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T12:58:02.093635 #3600]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-20T12:58:02.093714 #3600]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-20T12:58:43.753124 #3600]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T12:58:43.757356 #3600] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T12:58:43.757388 #3600] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T12:58:43.757403 #3600] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fd1f927eca0>]
+E, [2015-04-20T12:58:43.757416 #3600] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T12:58:43.757428 #3600] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T12:58:43.757500 #3600] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fd1f927eca0>
+E, [2015-04-20T12:58:43.757513 #3600] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T12:58:43.757524 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T12:58:43.757536 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T12:58:43.757549 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T12:58:43.757560 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T12:58:43.757572 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T12:58:43.757583 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T12:58:43.757596 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T12:58:43.757608 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T12:58:43.757620 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T12:58:43.757698 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T12:58:43.757711 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T12:58:43.757723 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T12:58:43.757735 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T12:58:43.757748 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T12:58:43.757761 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T12:58:43.757774 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T12:58:43.757787 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-04-20T12:58:43.757800 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:181:in `block in test'
+E, [2015-04-20T12:58:43.757812 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T12:58:43.757826 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:177:in `test'
+E, [2015-04-20T12:58:43.757852 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T12:58:43.757867 #3600] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T12:58:43.757923 #3600] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T15:23:57.788290 #6879]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:23:58.625231 #6879]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:23:58.629918 #6879] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T15:23:58.629979 #6879] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T15:23:58.630006 #6879] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007f8914932228>]
+E, [2015-04-20T15:23:58.630030 #6879] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T15:23:58.630052 #6879] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T15:23:58.630069 #6879] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007f8914932228>
+E, [2015-04-20T15:23:58.630082 #6879] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T15:23:58.630094 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T15:23:58.630107 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T15:23:58.630120 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T15:23:58.630173 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T15:23:58.630221 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T15:23:58.630258 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T15:23:58.630275 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T15:23:58.630288 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T15:23:58.630300 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T15:23:58.630312 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T15:23:58.630333 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T15:23:58.630352 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T15:23:58.630365 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T15:23:58.630377 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T15:23:58.630389 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T15:23:58.630409 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T15:23:58.630420 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T15:23:58.630431 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T15:23:58.630442 #6879] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T15:23:58.630454 #6879] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T15:25:20.857702 #7171]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:25:21.639529 #7171]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:25:21.642919 #7171] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T15:25:21.642973 #7171] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T15:25:21.642997 #7171] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007f91c196e060>]
+E, [2015-04-20T15:25:21.643011 #7171] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T15:25:21.643022 #7171] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T15:25:21.643033 #7171] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007f91c196e060>
+E, [2015-04-20T15:25:21.643044 #7171] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T15:25:21.643054 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T15:25:21.643065 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T15:25:21.643076 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T15:25:21.643109 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T15:25:21.643120 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T15:25:21.643157 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T15:25:21.643202 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T15:25:21.643216 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T15:25:21.643227 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T15:25:21.643238 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T15:25:21.643248 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T15:25:21.643258 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T15:25:21.643269 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T15:25:21.643279 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T15:25:21.643289 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T15:25:21.643300 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T15:25:21.643310 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T15:25:21.643322 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T15:25:21.643332 #7171] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T15:25:21.643343 #7171] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T15:25:50.219070 #7329]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:25:50.722311 #7329]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:25:50.724724 #7329] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T15:25:50.724749 #7329] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T15:25:50.724762 #7329] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fac71a0abe8>]
+E, [2015-04-20T15:25:50.724782 #7329] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T15:25:50.724800 #7329] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T15:25:50.724820 #7329] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fac71a0abe8>
+E, [2015-04-20T15:25:50.724843 #7329] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T15:25:50.724862 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T15:25:50.724882 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T15:25:50.724901 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T15:25:50.724934 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T15:25:50.724955 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T15:25:50.724974 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T15:25:50.724986 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T15:25:50.725014 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T15:25:50.725045 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T15:25:50.725077 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T15:25:50.725106 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T15:25:50.725117 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T15:25:50.725128 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T15:25:50.725138 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T15:25:50.725149 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T15:25:50.725159 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T15:25:50.725169 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T15:25:50.725180 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T15:25:50.725190 #7329] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T15:25:50.725200 #7329] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T15:26:14.740794 #7484]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:26:15.241830 #7484]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T15:33:31.434943 #8446]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:33:32.307439 #8446]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:36:38.411629 #8446] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T15:50:24.444927 #10583]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:50:25.318014 #10583]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:50:45.425453 #10583] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T15:52:25.112740 #10878]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T15:52:25.908490 #10878]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T15:53:11.003845 #10878] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:01:52.519251 #12097]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:01:53.866181 #12097]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:02:15.439991 #12097] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:02:38.235742 #12230]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:02:38.916183 #12230]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:04:12.835185 #12230] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:32:10.902617 #15345]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:32:11.832279 #15345]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:32:31.531069 #15345] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:37:17.534401 #16004]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:37:18.308568 #16004]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:43:18.944773 #16004] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:45:21.133393 #17011]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:45:21.910953 #17011]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:45:51.863196 #17011] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:46:46.938350 #17267]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:46:47.597578 #17267]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:47:10.511189 #17267] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:47:37.554349 #17424]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:47:37.998137 #17424]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:48:03.174118 #17424] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:49:29.879605 #17696]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:49:30.647386 #17696]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T16:58:05.632629 #17696]  INFO -- Kitchen: -----> Kitchen is finished. (8m35.75s)
+I, [2015-04-20T16:58:09.511702 #18747]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:58:10.300806 #18747]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:58:35.767657 #18747] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T16:58:53.689707 #18922]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T16:58:54.188085 #18922]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T16:59:36.436324 #18922] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:02:35.314377 #19416]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:02:35.780272 #19416]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:03:16.950346 #19416] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:04:27.908993 #19686]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:04:28.705228 #19686]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:05:10.061672 #19686] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:09:11.560743 #20454]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:09:12.271629 #20454]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:09:58.966268 #20454] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:10:30.505267 #20654]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:10:31.192166 #20654]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T17:10:35.397913 #20654]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.89s)
+I, [2015-04-20T17:10:36.254870 #20782]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:10:36.729197 #20782]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T17:10:36.731913 #20782]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T17:10:36.733007 #20782]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-20T17:10:36.733094 #20782]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-20T17:11:18.240230 #20782]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T17:16:07.775405 #21643]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:16:08.417261 #21643]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:16:34.775442 #21643] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:19:01.181025 #22038]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:19:01.840990 #22038]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T17:19:16.781515 #22119]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:19:17.381501 #22119]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:31:21.629867 #22119] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:38:55.304542 #24523]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T17:38:55.311575 #24523] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T17:38:55.311617 #24523] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T17:38:55.311632 #24523] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T17:38:55.311644 #24523] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T17:38:55.311655 #24523] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T17:38:55.311668 #24523] ERROR -- Kitchen: Message: (<unknown>): did not find expected ',' or '}' while parsing a flow mapping at line 16 column 17
+E, [2015-04-20T17:38:55.311679 #24523] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T17:38:55.311689 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T17:38:55.311702 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T17:38:55.311713 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T17:38:55.311723 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T17:38:55.311739 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T17:38:55.311750 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T17:38:55.311771 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T17:38:55.311782 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T17:38:55.311793 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T17:38:55.311803 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T17:38:55.311816 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T17:38:55.311841 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T17:38:55.311856 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T17:38:55.311877 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T17:38:55.311890 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T17:38:55.311937 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T17:38:55.311969 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T17:38:55.311985 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T17:38:55.311997 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T17:38:55.312008 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T17:38:55.312019 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T17:38:55.312030 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T17:38:55.312041 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T17:38:55.312052 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T17:38:55.312062 #24523] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T17:38:55.312073 #24523] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T17:38:55.312083 #24523] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T17:38:55.312093 #24523] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T17:46:32.316563 #25472]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:46:33.177394 #25472]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:47:01.311528 #25472] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:48:30.334410 #25720]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:48:31.058065 #25720]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:48:58.787197 #25720] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T17:51:53.204762 #26214]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:51:53.992614 #26214]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:51:53.996149 #26214] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T17:51:53.996190 #26214] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T17:51:53.996211 #26214] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fa48a26a0f8>]
+E, [2015-04-20T17:51:53.996225 #26214] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T17:51:53.996236 #26214] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T17:51:53.996248 #26214] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fa48a26a0f8>
+E, [2015-04-20T17:51:53.996259 #26214] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T17:51:53.996270 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T17:51:53.996282 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T17:51:53.996293 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T17:51:53.996339 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T17:51:53.996356 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T17:51:53.996374 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T17:51:53.996388 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T17:51:53.996402 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T17:51:53.996414 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T17:51:53.996455 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T17:51:53.996479 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T17:51:53.996492 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T17:51:53.996508 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T17:51:53.996531 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T17:51:53.996546 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T17:51:53.996558 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T17:51:53.996569 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T17:51:53.996580 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T17:51:53.996591 #26214] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T17:51:53.996602 #26214] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T17:52:02.743067 #26288]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:52:03.213089 #26288]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:52:03.215384 #26288] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T17:52:03.215413 #26288] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T17:52:03.215446 #26288] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fc8931c3af0>]
+E, [2015-04-20T17:52:03.215460 #26288] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T17:52:03.215480 #26288] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T17:52:03.215501 #26288] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fc8931c3af0>
+E, [2015-04-20T17:52:03.215521 #26288] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T17:52:03.215543 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T17:52:03.215564 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T17:52:03.215585 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T17:52:03.215596 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T17:52:03.215606 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T17:52:03.215630 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T17:52:03.215685 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T17:52:03.215701 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T17:52:03.215725 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T17:52:03.215737 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T17:52:03.215747 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T17:52:03.215757 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T17:52:03.215767 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T17:52:03.215777 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T17:52:03.215787 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T17:52:03.215797 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T17:52:03.215806 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T17:52:03.215816 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T17:52:03.215826 #26288] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T17:52:03.215835 #26288] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T17:52:18.039694 #26426]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:52:18.492819 #26426]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:52:18.495050 #26426] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T17:52:18.495079 #26426] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T17:52:18.495092 #26426] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007f89ab8edb40>]
+E, [2015-04-20T17:52:18.495103 #26426] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T17:52:18.495130 #26426] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T17:52:18.495140 #26426] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007f89ab8edb40>
+E, [2015-04-20T17:52:18.495226 #26426] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T17:52:18.495261 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T17:52:18.495292 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T17:52:18.495309 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T17:52:18.495329 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T17:52:18.495343 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T17:52:18.495364 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T17:52:18.495374 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T17:52:18.495384 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T17:52:18.495404 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T17:52:18.495425 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T17:52:18.495435 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T17:52:18.495444 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T17:52:18.495454 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T17:52:18.495479 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T17:52:18.495490 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T17:52:18.495499 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T17:52:18.495509 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T17:52:18.495518 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T17:52:18.495527 #26426] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T17:52:18.495537 #26426] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T17:52:26.558871 #26496]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T17:52:27.014085 #26496]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T17:52:27.016197 #26496] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T17:52:27.016225 #26496] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T17:52:27.016239 #26496] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fc91bb156c0>]
+E, [2015-04-20T17:52:27.016251 #26496] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T17:52:27.016262 #26496] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T17:52:27.016274 #26496] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fc91bb156c0>
+E, [2015-04-20T17:52:27.016294 #26496] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T17:52:27.016315 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T17:52:27.016335 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T17:52:27.016358 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T17:52:27.016399 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T17:52:27.016411 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T17:52:27.016426 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T17:52:27.016438 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T17:52:27.016461 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T17:52:27.016517 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T17:52:27.016547 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T17:52:27.016571 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T17:52:27.016592 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T17:52:27.016606 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T17:52:27.016617 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T17:52:27.016628 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T17:52:27.016638 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T17:52:27.016648 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T17:52:27.016658 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T17:52:27.016668 #26496] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T17:52:27.016678 #26496] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:08:05.947668 #952]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:08:06.750724 #952]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:08:06.755447 #952] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:08:06.755492 #952] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T18:08:06.755508 #952] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007fa5aaa1fde0>]
+E, [2015-04-20T18:08:06.755521 #952] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:08:06.755533 #952] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T18:08:06.755545 #952] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007fa5aaa1fde0>
+E, [2015-04-20T18:08:06.755556 #952] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:08:06.755568 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T18:08:06.755586 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T18:08:06.755609 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T18:08:06.755644 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T18:08:06.755656 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T18:08:06.755762 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T18:08:06.755785 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T18:08:06.755797 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T18:08:06.755809 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T18:08:06.755820 #952] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:08:06.755831 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T18:08:06.755841 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T18:08:06.755852 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T18:08:06.755862 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T18:08:06.755883 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T18:08:06.755896 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T18:08:06.755906 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T18:08:06.755916 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T18:08:06.755926 #952] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T18:08:06.755937 #952] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:08:21.685597 #1041]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:08:22.112084 #1041]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:08:22.114297 #1041] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:08:22.114325 #1041] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T18:08:22.114357 #1041] ERROR -- Kitchen: Message: Failed to complete #converge action: [undefined method `merge' for #<String:0x007f90212a07e8>]
+E, [2015-04-20T18:08:22.114370 #1041] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:08:22.114380 #1041] ERROR -- Kitchen: Class: NoMethodError
+E, [2015-04-20T18:08:22.114390 #1041] ERROR -- Kitchen: Message: undefined method `merge' for #<String:0x007f90212a07e8>
+E, [2015-04-20T18:08:22.114401 #1041] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:08:22.114410 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:252:in `prepare_json'
+E, [2015-04-20T18:08:22.114421 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:104:in `create_sandbox'
+E, [2015-04-20T18:08:22.114490 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-20T18:08:22.114508 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-20T18:08:22.114521 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T18:08:22.114531 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T18:08:22.114561 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T18:08:22.114593 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T18:08:22.114616 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T18:08:22.114637 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:08:22.114648 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T18:08:22.114658 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T18:08:22.114668 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T18:08:22.114678 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T18:08:22.114696 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T18:08:22.114706 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T18:08:22.114715 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T18:08:22.114735 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T18:08:22.114747 #1041] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T18:08:22.114756 #1041] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:09:20.510942 #1216]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:09:20.944569 #1216]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:09:24.232540 #1216] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:09:24.232572 #1216] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-20T18:09:24.232588 #1216] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "127.0.0.1" port 2222]
+E, [2015-04-20T18:09:24.232601 #1216] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:09:24.232612 #1216] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2015-04-20T18:09:24.232623 #1216] ERROR -- Kitchen: Message: Connection refused - connect(2) for "127.0.0.1" port 2222
+E, [2015-04-20T18:09:24.232652 #1216] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:09:24.232662 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2015-04-20T18:09:24.232673 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2015-04-20T18:09:24.232684 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2015-04-20T18:09:24.232695 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2015-04-20T18:09:24.232705 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2015-04-20T18:09:24.232719 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2015-04-20T18:09:24.232736 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2015-04-20T18:09:24.232747 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2015-04-20T18:09:24.232758 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2015-04-20T18:09:24.232790 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:184:in `session'
+E, [2015-04-20T18:09:24.232836 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2015-04-20T18:09:24.232875 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:81:in `exec'
+E, [2015-04-20T18:09:24.232897 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2015-04-20T18:09:24.232916 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:46:in `block in converge'
+E, [2015-04-20T18:09:24.232955 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-04-20T18:09:24.232966 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-04-20T18:09:24.232977 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-04-20T18:09:24.232987 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-20T18:09:24.232998 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-20T18:09:24.233008 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-20T18:09:24.233027 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-20T18:09:24.233040 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-20T18:09:24.233050 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:09:24.233060 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-20T18:09:24.233070 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-20T18:09:24.233080 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-20T18:09:24.233090 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-20T18:09:24.233100 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-20T18:09:24.233110 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-20T18:09:24.233120 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-20T18:09:24.233129 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-20T18:09:24.233139 #1216] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-20T18:09:24.233149 #1216] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:09:30.873976 #1298]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:09:31.313668 #1298]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T18:09:31.314199 #1298]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T18:09:35.123384 #1298]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-20T18:09:35.123611 #1298]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-20T18:10:13.152800 #1298]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:10:16.323728 #1298] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:10:24.731971 #1633]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:10:25.175686 #1633]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T18:11:59.722818 #2102]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:11:59.724463 #2102] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:11:59.724491 #2102] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:11:59.724504 #2102] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:11:59.724516 #2102] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:11:59.724526 #2102] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:11:59.724536 #2102] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 15 column 3
+E, [2015-04-20T18:11:59.724547 #2102] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:11:59.724557 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:11:59.724570 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:11:59.724581 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:11:59.724612 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:11:59.724633 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:11:59.724655 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:11:59.724666 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:11:59.724676 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:11:59.724694 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:11:59.724704 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:11:59.724718 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:11:59.724729 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:11:59.724744 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:11:59.724779 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:11:59.724808 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:11:59.724832 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:11:59.724854 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:11:59.724865 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:11:59.724876 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:11:59.724886 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:11:59.724896 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:11:59.724906 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:11:59.724916 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:11:59.724927 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:11:59.724937 #2102] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:11:59.724947 #2102] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:11:59.724956 #2102] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:11:59.724966 #2102] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:12:34.702386 #2217]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:12:34.704123 #2217] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:12:34.704153 #2217] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:12:34.704167 #2217] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:12:34.704180 #2217] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:12:34.704191 #2217] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:12:34.704202 #2217] ERROR -- Kitchen: Message: (<unknown>): did not find expected '-' indicator while parsing a block collection at line 15 column 3
+E, [2015-04-20T18:12:34.704249 #2217] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:12:34.704268 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:12:34.704280 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:12:34.704301 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:12:34.704321 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:12:34.704337 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:12:34.704349 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:12:34.704378 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:12:34.704409 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:12:34.704430 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:12:34.704452 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:12:34.704464 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:12:34.704487 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:12:34.704500 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:12:34.704511 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:12:34.704523 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:12:34.704533 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:12:34.704544 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:12:34.704555 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:12:34.704566 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:12:34.704577 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:12:34.704587 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:12:34.704598 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:12:34.704608 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:12:34.704619 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:12:34.704630 #2217] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:12:34.704640 #2217] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:12:34.704650 #2217] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:12:34.704660 #2217] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:13:32.109491 #2368]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:13:32.556505 #2368]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:13:35.686339 #2368] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:13:54.997949 #2470]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:13:54.963863 #2470]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T18:13:58.348871 #2470]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.35s)
+I, [2015-04-20T18:13:58.818553 #2568]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:13:59.260906 #2568]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T18:13:59.261057 #2568]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T18:13:59.262432 #2568]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-20T18:13:59.262546 #2568]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-20T18:14:39.565688 #2568]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:16:03.118961 #2568] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:16:20.879606 #3013]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:16:21.357294 #3013]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T18:16:21.357803 #3013]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T18:16:24.754310 #3013]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-20T18:16:24.754525 #3013]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-20T18:16:59.242314 #3013]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T18:17:03.926299 #3270]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:17:04.362682 #3270]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-20T18:17:04.363128 #3270]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-20T18:17:09.026380 #3415]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:17:09.474907 #3415]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T18:17:30.367412 #3501]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:17:30.865990 #3501]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:19:01.283033 #3501] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:19:57.112981 #3850]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:19:57.114972 #3850] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:19:57.115004 #3850] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:19:57.115019 #3850] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:19:57.115033 #3850] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:19:57.115050 #3850] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:19:57.115062 #3850] ERROR -- Kitchen: Message: (<unknown>): did not find expected ',' or '}' while parsing a flow mapping at line 18 column 17
+E, [2015-04-20T18:19:57.115073 #3850] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:19:57.115102 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:19:57.115125 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:19:57.115147 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:19:57.115160 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:19:57.115171 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:19:57.115201 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:19:57.115219 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:19:57.115231 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:19:57.115287 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:19:57.115311 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:19:57.115325 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:19:57.115345 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:19:57.115356 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:19:57.115366 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:19:57.115376 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:19:57.115386 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:19:57.115396 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:19:57.115406 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:19:57.115416 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:19:57.115426 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:19:57.115436 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:19:57.115446 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:19:57.115456 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:19:57.115475 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:19:57.115485 #3850] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:19:57.115495 #3850] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:19:57.115504 #3850] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:19:57.115514 #3850] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:20:25.076859 #3953]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:20:25.517124 #3953]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:23:07.279036 #3953] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:23:07.710618 #4328]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:23:07.712674 #4328] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:23:07.712708 #4328] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:23:07.712722 #4328] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:23:07.712745 #4328] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:23:07.712756 #4328] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:23:07.712766 #4328] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 15 column 5
+E, [2015-04-20T18:23:07.712792 #4328] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:23:07.712810 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:23:07.712822 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:23:07.712835 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:23:07.712855 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:23:07.712868 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:23:07.712878 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:23:07.712888 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:23:07.712897 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:23:07.712907 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:23:07.712917 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:23:07.712927 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:23:07.712946 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:23:07.712958 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:23:07.712972 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:23:07.713015 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:23:07.713037 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:23:07.713058 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:23:07.713069 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:23:07.713079 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:23:07.713089 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:23:07.713099 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:23:07.713109 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:23:07.713119 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:23:07.713128 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:23:07.713138 #4328] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:23:07.713158 #4328] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:23:07.713168 #4328] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:23:07.713177 #4328] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:24:04.226064 #4480]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:24:04.228009 #4480] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:24:04.228054 #4480] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:24:04.228082 #4480] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:24:04.228098 #4480] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:24:04.228110 #4480] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:24:04.228120 #4480] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 15 column 5
+E, [2015-04-20T18:24:04.228131 #4480] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:24:04.228141 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:24:04.228158 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:24:04.228171 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:24:04.228185 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:24:04.228205 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:24:04.228221 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:24:04.228245 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:24:04.228256 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:24:04.228266 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:24:04.228276 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:24:04.228294 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:24:04.228310 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:24:04.228348 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:24:04.228376 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:24:04.228398 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:24:04.228409 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:24:04.228419 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:24:04.228430 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:24:04.228439 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:24:04.228449 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:24:04.228459 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:24:04.228468 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:24:04.228478 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:24:04.228487 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:24:04.228517 #4480] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:24:04.228529 #4480] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:24:04.228538 #4480] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:24:04.228548 #4480] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:24:15.763439 #4549]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:24:15.765528 #4549] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:24:15.765560 #4549] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:24:15.765575 #4549] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:24:15.765587 #4549] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:24:15.765598 #4549] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:24:15.765609 #4549] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 15 column 5
+E, [2015-04-20T18:24:15.765620 #4549] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:24:15.765630 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:24:15.765640 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:24:15.765651 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:24:15.765661 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:24:15.765672 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:24:15.765682 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:24:15.765725 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:24:15.765748 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:24:15.765760 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:24:15.765777 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:24:15.765808 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:24:15.765829 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:24:15.765860 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:24:15.765881 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:24:15.765893 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:24:15.765912 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:24:15.765922 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:24:15.765943 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:24:15.765953 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:24:15.765963 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:24:15.765989 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:24:15.766001 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:24:15.766010 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:24:15.766020 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:24:15.766030 #4549] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:24:15.766039 #4549] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:24:15.766048 #4549] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:24:15.766057 #4549] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:25:18.365107 #4718]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:25:18.367039 #4718] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:25:18.367081 #4718] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:25:18.367097 #4718] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:25:18.367109 #4718] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:25:18.367121 #4718] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:25:18.367131 #4718] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 15 column 5
+E, [2015-04-20T18:25:18.367144 #4718] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:25:18.367161 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:25:18.367184 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:25:18.367200 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:25:18.367210 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:25:18.367220 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:25:18.367230 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:25:18.367241 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:25:18.367253 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:25:18.367273 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:25:18.367287 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:25:18.367340 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:25:18.367370 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:25:18.367385 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:25:18.367407 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:25:18.367418 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:25:18.367428 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:25:18.367452 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:25:18.367464 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:25:18.367474 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:25:18.367484 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:25:18.367493 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:25:18.367503 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:25:18.367513 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:25:18.367533 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:25:18.367543 #4718] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:25:18.367553 #4718] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:25:18.367562 #4718] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:25:18.367571 #4718] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:25:57.961695 #4839]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-04-20T18:25:57.963606 #4839] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-20T18:25:57.963639 #4839] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-04-20T18:25:57.963668 #4839] ERROR -- Kitchen: Message: Error parsing /Users/filippo/Projects/xpeppers/rails-peppers-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2015-04-20T18:25:57.963682 #4839] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-20T18:25:57.963693 #4839] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2015-04-20T18:25:57.963713 #4839] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 15 column 5
+E, [2015-04-20T18:25:57.963725 #4839] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-20T18:25:57.963735 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:343:in `rescue in parse_yaml_string'
+E, [2015-04-20T18:25:57.963746 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:332:in `parse_yaml_string'
+E, [2015-04-20T18:25:57.963757 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:138:in `yaml'
+E, [2015-04-20T18:25:57.963773 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:126:in `combined_hash'
+E, [2015-04-20T18:25:57.963789 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2015-04-20T18:25:57.963802 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:139:in `data'
+E, [2015-04-20T18:25:57.963838 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:118:in `suites'
+E, [2015-04-20T18:25:57.963850 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-04-20T18:25:57.963861 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-04-20T18:25:57.963871 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:104:in `instances'
+E, [2015-04-20T18:25:57.963881 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-04-20T18:25:57.963892 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-04-20T18:25:57.963919 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-04-20T18:25:57.963932 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-20T18:25:57.963949 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-04-20T18:25:57.963986 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-04-20T18:25:57.964015 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-04-20T18:25:57.964031 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-04-20T18:25:57.964052 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-04-20T18:25:57.964062 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-04-20T18:25:57.964073 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-04-20T18:25:57.964083 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-04-20T18:25:57.964102 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-04-20T18:25:57.964112 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-04-20T18:25:57.964122 #4839] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2015-04-20T18:25:57.964132 #4839] ERROR -- Kitchen: /usr/bin/kitchen:15:in `load'
+E, [2015-04-20T18:25:57.964142 #4839] ERROR -- Kitchen: /usr/bin/kitchen:15:in `<main>'
+E, [2015-04-20T18:25:57.964152 #4839] ERROR -- Kitchen: ----------------------
+I, [2015-04-20T18:26:18.569509 #4924]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:26:19.011682 #4924]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:27:33.904423 #4924] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:30:39.208771 #5540]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:30:39.641497 #5540]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:31:20.465114 #5540] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:32:46.409466 #5854]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:32:46.852553 #5854]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:33:05.576035 #5854] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:34:05.610927 #6073]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:34:06.060682 #6073]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T18:34:35.096224 #6073]  INFO -- Kitchen: -----> Kitchen is finished. (0m29.49s)
+I, [2015-04-20T18:35:03.766796 #6240]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:35:04.217805 #6240]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-20T18:35:23.967397 #6240]  INFO -- Kitchen: -----> Kitchen is finished. (0m20.20s)
+I, [2015-04-20T18:37:25.966619 #6648]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:37:26.419944 #6648]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1404>...
+I, [2015-04-20T18:38:15.412037 #6648]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1404>...
+E, [2015-04-20T18:39:03.202952 #6648] ERROR -- Kitchen: Verify failed on instance <default-ubuntu-1404>.
+I, [2015-04-20T18:41:33.516962 #7236]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-20T18:41:33.953971 #7236]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2015-04-20T18:44:59.093458 #7236] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1404>.
+I, [2015-04-21T18:23:47.226370 #76629]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-21T18:23:48.167201 #76629]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2015-04-21T18:23:48.168635 #76629]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-21T18:23:51.955720 #76629]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2015-04-21T18:23:51.955959 #76629]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2015-04-21T18:24:42.396732 #76629]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+I, [2015-04-21T18:36:22.995510 #76629]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1404>...
+I, [2015-04-21T18:36:48.168151 #76629]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1404>...
+I, [2015-04-21T18:37:07.197559 #76629]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2015-04-21T18:37:11.226065 #76629]  INFO -- Kitchen: -----> Kitchen is finished. (13m24.00s)

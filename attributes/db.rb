@@ -1,0 +1,5 @@
+default['railspeppers']['db']['version'] = '5.6'
+default['railspeppers']['db']['root_password'] = ''
+default['railspeppers']['db']['name'] = ''
+default['railspeppers']['db']['user'] = ''
+default['railspeppers']['db']['password'] = ''
