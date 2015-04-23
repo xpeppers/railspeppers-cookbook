@@ -1,3 +1,3 @@
-# Rails Peppers Cookbook
+# Railspeppers Cookbook
 
 XPeppers base Rails applications cookbook
