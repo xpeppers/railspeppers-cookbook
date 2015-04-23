@@ -1,3 +1,9 @@
+apt_package 'build-essential'
+apt_package 'git'
+apt_package 'libmysqlclient-dev'
+apt_package 'qt5-default'
+apt_package 'libqt5webkit5-dev'
+
 gem_package 'bundler' do
   version node['railspeppers']['bundler_version']
   gem_binary '/usr/bin/gem'
