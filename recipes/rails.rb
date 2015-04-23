@@ -1,3 +1,5 @@
+include_recipe 'apt'
+
 apt_package 'build-essential'
 apt_package 'git'
 apt_package 'libmysqlclient-dev'

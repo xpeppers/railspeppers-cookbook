@@ -1,3 +1,4 @@
+include_recipe 'apt'
 include_recipe 'nginx'
 
 template '/etc/nginx/sites-available/localhost.com' do
