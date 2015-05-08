@@ -8,7 +8,6 @@ apt_package 'libqt5webkit5-dev'
 
 gem_package 'bundler' do
   version node['railspeppers']['bundler_version']
-  gem_binary '/usr/bin/gem'
 end
 
 include_recipe 'nodejs::nodejs_from_binary'
