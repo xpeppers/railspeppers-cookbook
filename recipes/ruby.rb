@@ -16,7 +16,7 @@ end
 end
 
 apt_package "ruby#{node['railspeppers']['ruby_version']}"
-apt_package "ruby#{node['railspeppers']['ruby_version']}"
+apt_package "ruby#{node['railspeppers']['ruby_version']}-dev"
 
 execute 'config ruby bin' do
   command "update-alternatives --set ruby /usr/bin/ruby#{node['railspeppers']['ruby_version']} && update-alternatives --set gem /usr/bin/gem#{node['railspeppers']['ruby_version']}"
